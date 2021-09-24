@@ -2,6 +2,25 @@
 # TSAI - END3 Session 1 Assignment
 *Group Members: Dhruba Adhikary, Phani Nandula, Prateek Maheshwari, Sujit Ojha*
 
+# Part 1 - Rewriting the Code
+
+- [Notebook](END3_ASSIGNMENT_1.ipynb) with problem statement, different iterations and conclusion.
+- **Conclusions**
+  1. Tried out 3 different neural network architectures that meet the total parameter requirement of 44.
+  2. We have changed 
+      * A. optimizer from SGD to ADAM, 
+      * B. loss from L1 loss to MSE,
+      * C. Activation function from tanh to Sigmoid.
+      * D. Number of epochs from 300 to 2001.
+      * E. Removed activation from the last layer of all the networks
+  3. Model 3 is having most number of layers (9), and observed *vanishing gradient* issue since for inner layers gradients are zero and but loss is high as well as predictions are bad.
+
+  4. Model 1 and Model 2 have better predictions.
+
+- [Notebook with additional iterations](./Additional/END_3_0_Assignment_1_submission.ipynb) & [detailed readme](./Additional/README.md).
+
+# Part 2 - Questions
+
 ## 1. What is a neural network neuron?
 A neuron in an artificial neural network is an elementary block that mimics the functionality of human neurons. However, with stark difference that neurons/perceptron are enabled with memory storage for a very short duration of time and serve as an elementary computational block unlike the human neurons that allow for memory storage, computation and signalling. Also, unlike Human neuron where inputs may be termed as dendrites and outputs are via Axioms, the input and output lines for perceptron’s are termed as weights.
 ![](./Resources/Theory/001.png)
@@ -28,6 +47,17 @@ With Activation Function :
 
 
 ## 2. What is the use of the learning rate?
+
+First off, what is a learning rate?
+
+Learning rate is a hyper-parameter that controls how much we are adjusting the weights of our network with respect the loss gradient. The lower the value, the slower we travel along the downward slope. While this might be a good idea (using a low learning rate) in terms of making sure that we do not miss any local minima, it could also mean that we’ll be taking a long time to converge — especially if we get stuck on a plateau region.
+
+The following formula shows the relationship.
+
+New Weight = Old weight – Learning Rate \* Gradient.
+
+![](./Resources/Theory/005.png)
+
 Learning rate is one of the most important hyperparameter used while training deep learning models. Learning rate (```alpha```) determines the size of the steps which a Gradient Descent optimizer takes along the direction of the slope of the surface derived from the loss function towards local minima.
 
 Basic steps involved in training a machine learning model is shown in below figure. Learning rate (```alpha```) is used in **updation of parameters** which are then used to re-calculate the loss and this cycle continues till we achieve desired accuracy (acceptable loss).
