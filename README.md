@@ -8,7 +8,7 @@ Learning rate is one of the most important hyperparameter used while training de
 
 Basic steps involved in training a machine learning model is shown in below figure. Learning rate (```alpha```) is used in **updation of parameters** which are then used to re-calculate the loss and this cycle continues till we achieve desired accuracy (acceptable loss).
 
-![Learning_rate](https://user-images.githubusercontent.com/30425824/133917777-318f0de1-1607-433c-89f7-efbc4d195e76.jpg)
+![Learning_rate](https://user-images.githubusercontent.com/30425824/134680786-d5290c70-75c0-47f8-8024-56be0c255419.jpg)
 
 * **Small Learning rate** will slow down the training progress, but are also more desirable when the loss keeps getting worse or oscillates wildly. 
 * **Large Learning rate** will accelerate the training progress rate and are beneficial when the loss is dropping fairly consistently in several consecutive iterations. However, large Learning rate value may also cause the training getting stuck at a local minimum, preventing the model from improving, resulting in either a low accuracy or not able to converge. 
