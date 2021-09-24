@@ -3,7 +3,28 @@
 *Group Members: Dhruba Adhikary, Phani Nandula, Prateek Maheshwari, Sujit Ojha*
 
 ## 1. What is a neural network neuron?
+A neuron in an artificial neural network is an elementary block that mimics the functionality of human neurons. However, with stark difference that neurons/perceptron are enabled with memory storage for a very short duration of time and serve as an elementary computational block unlike the human neurons that allow for memory storage, computation and signalling. Also, unlike Human neuron where inputs may be termed as dendrites and outputs are via Axioms, the input and output lines for perceptron’s are termed as weights.
+![](./Resources/Theory/001.png)
 
+
+![](./Resources/Theory/002.png)
+
+
+Each neuron is fed with an input along with associated weight and bias. A neuron has two functions:
+
+\1) Accumulator function: It essentially is the weighted sum of input along with a bias added to it.
+\2) Activation function: Activation functions are non-linear function. And as the name suggests is a function to decide whether output of a node will be actively participating in the overall output of the model or not. 
+
+
+Now an Activation function plays a very critical task of converting the Acumulator function into non-linear space so that the layers might not collapse into 1 layer .
+
+So essentially without activation function : 
+
+![](./Resources/Theory/003.png)
+
+With Activation Function : 
+
+![](./Resources/Theory/004.png)
 
 
 ## 2. What is the use of the learning rate?
