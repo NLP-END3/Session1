@@ -1,4 +1,7 @@
 
+# TSAI - END3 Session 1 Assignment
+*Group Members: Dhruba Adhikary, Phani Nandula, Prateek Maheshwari, Sujit Ojha*
+
 ## 1. What is a neural network neuron?
 
 
